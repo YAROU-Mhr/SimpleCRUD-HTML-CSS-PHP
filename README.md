@@ -9,7 +9,7 @@ Ce projet met en œuvre un CRUD sur une table de base de données nommée "posts
 - ID du post
 - Titre du post
 - Contenu du post
-- Date de création/modification du post
+- Date de création/modification du post (la date de modification est nullable)
 
 Ce modèle simple démontre les opérations CRUD de base et peut être utilisé comme base pour des applications plus complexes nécessitant la manipulation de données.
 
