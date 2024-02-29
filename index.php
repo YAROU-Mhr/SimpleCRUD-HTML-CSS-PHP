@@ -25,9 +25,20 @@ $all_posts = $stmt->fetchAll(); // FR: Récupère toutes les publications dans u
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles pour le lien de vue */
+        td a.view {
+            color: #fff;
+            background-color: #17a2b8;
+            /* Bleu */
+        }
 
+        td a.view:hover {
+            background-color: #138496;
+            /* Bleu foncé au survol */
+        }
+    </style>
 </head>
 
 <body>
@@ -95,6 +106,9 @@ $all_posts = $stmt->fetchAll(); // FR: Récupère toutes les publications dans u
 
                                 <td class="action">
                                     <!-- FR: Colonne pour les actions | AN: Column for actions -->
+
+                                    <a href="view_post.php?id_post=<?php echo $post['id']; ?>" class="view">Voir</a>
+                                    <!-- FR: Lien pour supprimer la publication | AN: Link to delete the post -->
 
                                     <a href="form_modif.php?id_post=<?php echo $post['id']; ?>" class="modif">Modifier</a>
                                     <!-- FR: Lien pour modifier la publication | AN: Link to modify the post -->

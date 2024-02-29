@@ -20,12 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($exits_posts) {
         // Préparation de la requête SQL pour mettre à jour les données dans la table 'posts'
         // Preparation of the SQL query to update the data in the 'posts' table
-        $sql = "UPDATE posts SET title = ?, content = ? WHERE id = ?";
+
+        // Obtention de la date et de l'heure actuelles
+        $updated_date = date("Y-m-d H:i:s");
+
+        $sql = "UPDATE posts SET title = ?, content = ?, updated_at=? WHERE id = ?";
         $stmt = $bdd->prepare($sql);
 
         // Exécution de la requête
         // Execution of the query
-        $stmt->execute([$title, $content, $id_post]);
+        $stmt->execute([$title, $content, $updated_date, $id_post]);
         if ($stmt) {
             // Message de succès si la mise à jour est réussie
             // Success message if the update is successful

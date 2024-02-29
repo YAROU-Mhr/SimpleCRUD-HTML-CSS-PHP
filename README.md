@@ -33,6 +33,7 @@ Ce CRUD offre plusieurs avantages par rapport à d'autres solutions existantes :
 6. `trt_modification.php` : Traitement de la modification d'un post existant.
 7. `trt_suppression.php` : Traitement de la suppression d'un post.
 8. `bdd.sql` : Base de données avec cinq ligne déjà présente.
+9. `view_post.php` : Voir un seul post.
 
 
 ## Instructions d’installations
@@ -62,7 +63,7 @@ Ce CRUD offre plusieurs avantages par rapport à d'autres solutions existantes :
 
 ## Signaler un bug ou poser une question
 
-Si vous rencontrez un bug ou si vous avez des questions, veuillez ouvrir une nouvelle issue [ici](https://github.com/votre-utilisateur/SimpleCRUD-HTML-CSS-PHP/issues).
+Si vous rencontrez un bug ou si vous avez des questions, veuillez ouvrir une nouvelle issue [ici](https://github.com/YAROU-Mhr/SimpleCRUD-HTML-CSS-PHP/issues).
 
 ## FAQ
 
@@ -73,5 +74,5 @@ R : Vous pouvez modifier les styles CSS dans le fichier `styles.css` pour person
 R : Vous pouvez ajouter de nouvelles fonctionnalités en modifiant les fichiers PHP pour le traitement des données et en ajoutant de nouveaux formulaires HTML si nécessaire.
 
 ### Q : Puis-je utiliser ce CRUD dans des projets commerciaux ?
-R : Oui, vous êtes libre d'utiliser ce CRUD dans des projets commerciaux ou personnels selon les termes de la licence MIT.
+R : Oui, vous êtes libre d'utiliser ce CRUD dans des projets commerciaux ou personnels.
 
