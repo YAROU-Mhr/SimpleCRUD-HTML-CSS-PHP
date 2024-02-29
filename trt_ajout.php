@@ -20,7 +20,6 @@ if ($duplicate_posts) {
 
     $message = "Error: Un post avec le même titre existe déjà (A post with the same title already exists)"; // FR: Un post avec le même titre existe déjà | EN: A post with the same title already exists    
     header("location:index.php?message=$message");// Redirection 
-    die('mhr');
 
 } else {
 

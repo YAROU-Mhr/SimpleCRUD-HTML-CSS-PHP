@@ -96,7 +96,7 @@ $all_posts = $stmt->fetchAll(); // FR: Récupère toutes les publications dans u
                                 <td class="action">
                                     <!-- FR: Colonne pour les actions | AN: Column for actions -->
 
-                                    <a href="#" class="modif">Modifier</a>
+                                    <a href="form_modif.php?id_post=<?php echo $post['id']; ?>" class="modif">Modifier</a>
                                     <!-- FR: Lien pour modifier la publication | AN: Link to modify the post -->
 
                                     <a href="#" class="suppr">Supprimer</a>
