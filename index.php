@@ -33,7 +33,11 @@ $all_posts = $stmt->fetchAll(); // FR: Récupère toutes les publications dans u
 <body>
     <div class="container">
 
-        <h1>Liste des Posts <a href="#" class="add-link">Ajouter</a></h1>
+        <h1>Liste des Posts
+            <a href="form_ajout.php" class="add-link">Ajouter</a>
+            <!-- FR: Lien pour ajouter une publication | AN: Link to modify the post -->
+
+        </h1>
         <div class="content">
             <table>
                 <thead>

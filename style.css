@@ -58,6 +58,7 @@ h1 {
     border: 1px solid #007bff;
     border-radius: 3px;
     transition: background-color 0.3s ease;
+    margin-left: 1.5rem;
 }
 
 .add-link:hover {
@@ -180,4 +181,61 @@ th {
         display: block;
         margin-bottom: 5px;
     }
+}
+
+
+/*Formulaire d'ajout (Form add)*/
+form{
+    border: #999 2px solid !important;
+    padding: 1rem;
+}
+
+form .row{
+    margin-bottom: 1rem;
+}
+
+
+label{
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+/* Styles pour le lien de modification en vert */
+.btn-envoyer {
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #28a745; /* Vert */
+    transition: all ease .5;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-envoyer:hover {
+    background-color: #218838; /* Vert plus foncé au survol */
+    scale: 1.1;
 }
