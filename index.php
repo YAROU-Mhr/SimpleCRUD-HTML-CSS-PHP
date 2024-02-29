@@ -4,7 +4,7 @@
 
 require_once 'connection.php'; // FR: Inclut le fichier de connexion à la base de données | AN: Include the database connection file
 
-$query = "SELECT * FROM posts"; // FR: Requête pour sélectionner toutes les publications | AN: Query to select all posts
+$query = "SELECT * FROM posts ORDER BY id DESC"; // FR: Requête pour sélectionner toutes les publications | AN: Query to select all posts
 $stmt = $bdd->prepare($query); // FR: Prépare la requête | AN: Prepare the query
 $stmt->execute(); // FR: Exécute la requête | AN: Execute the query
 
@@ -38,7 +38,14 @@ $all_posts = $stmt->fetchAll(); // FR: Récupère toutes les publications dans u
             <!-- FR: Lien pour ajouter une publication | AN: Link to modify the post -->
 
         </h1>
+
+
         <div class="content">
+            <?php if (isset($_GET['message']) && !empty($_GET['message'])) { ?>
+                <h3 class="message">
+                    <?php echo $_GET['message'] ?>
+                </h3>
+            <?php } ?>
             <table>
                 <thead>
                     <tr>

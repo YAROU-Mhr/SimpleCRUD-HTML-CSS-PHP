@@ -21,12 +21,21 @@
 <body>
     <div class="container">
 
-        <h1>Ajouter un Posts  (Add Post)
-            <a href="index.php" class="add-link" >Retour (Back)</a>
+        <h1>Ajouter un Posts (Add Post)
+            <a href="index.php" class="add-link">Retour (Back)</a>
             <!-- FR: Lien pour ajouter une publication | AN: Link to modify the post -->
         </h1>
+
+
+
         <div class="content form-add">
-            <form action="" method="POST">
+            <?php if (isset($_GET['message']) && !empty($_GET['message'])) { ?>
+                <h3 class="message">
+                    <?php echo $_GET['message'] ?>
+                </h3>
+            <?php } ?>
+            <form action="trt_ajout.php" method="POST">
+                <!-- FR:Dans action ajouter le lien pour traiter l'ajouter de la publication | AN:In the action column, add the link to handle adding the publication -->
                 <div class="row">
                     <label for="title">Titre (title)</label>
                     <input class="form-control" type="text" name="title" id="title" required>
@@ -36,7 +45,7 @@
                     <textarea class="form-control" type="text" name="content" id="content" required cols="30" rows="3"></textarea>
                 </div>
                 <div class="row">
-                   <button class="btn-envoyer" type="submit">Envoyer</button>
+                    <button class="btn-envoyer" type="submit">Envoyer</button>
                 </div>
             </form>
         </div>
