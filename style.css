@@ -1,0 +1,11 @@
+/*
+*FR: Ce fichier concerne les styles.
+*AN: Now it's about the style file.
+*/
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
