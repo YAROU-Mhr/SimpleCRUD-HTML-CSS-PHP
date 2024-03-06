@@ -40,7 +40,7 @@ Ce CRUD offre plusieurs avantages par rapport à d'autres solutions existantes :
 
 1. Clonez ce dépôt sur votre machine locale.
       ```
-   git clone https://github.com/votre-utilisateur/SimpleCRUD-HTML-CSS-PHP.git
+   git clone https://github.com/YAROU-Mhr/SimpleCRUD-HTML-CSS-PHP.git
    ```
 2. Placez les fichiers dans le répertoire de votre serveur web local ( htdocs ou www pour Apache selon votre serveur).
 3. Importez la base de données fournie (fichier SQL) dans votre gestionnaire de base de données.
